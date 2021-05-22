@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/* Navbar items */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#logo img{
+    height: 80px;
+    width: 90px;
+    padding: 10px 15px;
+    border-radius: 42px;
+}
+#logo img:hover{
+    transform: scale(1.1);
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar ul li a{
+    font-family: 'Libre Baskerville', serif;
+    padding: 0px 18px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color:rgb(17, 14, 14);
+    border-radius: 10px;
+    color:khaki;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    background: url(bg1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 390px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    font-family: 'Bree Serif', serif;
+    color:linen;
+    
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    color:honeydew;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: seagreen;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bold;
+    color: black;
+}
+/* Services Section */
+#services{
+    display: flex;
+    margin-bottom: 50px;
+}
+#services .box{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid rgb(156, 104, 37);
+    margin: 5px 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: gainsboro;
+}
+#services .box p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+}
+#services .box:hover{
+    box-shadow: 5px 5px gray;
+}
+.box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+/* Clients Section */
+#clients{
+    margin-bottom: 42px;
+}
+#clients::before{
+    content: " ";
+    position: absolute;
+    background: url(bg.jpg) no-repeat;
+    height: 261px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients .client{
+    display: flex;
+    justify-content: space-around;    
+    flex-wrap: wrap;
+}
+#clients .client .client-item{
+    margin: 10px;
+}
+#clients .client .client-item img{
+    margin-top: 30px;
+    height: 100px;
+    width: auto;
+}
+/* Contact Section */
+#contact::before{
+    content: " ";
+    position: absolute;
+    background: url(contacts.jpg) no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact{
+    margin-bottom: 70px;
+}
+#contact-box{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+#contact-box input,#contact-box textarea{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 2px 100px;
+    margin-left: 170px;
+    width: 100%;
+    border-radius: 9px;
+    outline: none;
+}
+.forms label{
+    display: block;
+    margin-left: 180px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility Classes */
+.hprimary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.btn{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color:orchid;
+    border-radius: 15px;
+    margin-top: 40px;
+    border: 2px solid lightsalmon;
+    color:mintcream;
+}
+.center{
+    text-align: center;
+}
+.hsecondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+}
+footer{
+    font-family: 'Libre Baskerville', serif;
+    padding: 9px 20px;
+    background-color: black;
+    color: white;
+}
+.bt{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 30px;
+    margin-left: 620px;
+    padding: 10px 30px;
+    background-color: rgb(107, 177, 142);
+    color:black;
+    border-radius: 10px;
+}
+.bt:hover{
+    background-color: springgreen;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
